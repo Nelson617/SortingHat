@@ -38,7 +38,7 @@ public class Sorting {
     // Method to sort the array using slection sort
     public void SelectionSort() {
 
-        for (int n = 0; n < array.length - 1 ; n++) { //0 to 8
+        for (int n = 0; n < array.length - 1; n++) { //0 to 8
 
             int minIndex = n;
 
@@ -56,19 +56,41 @@ public class Sorting {
     }
 
     // bubble sort method
-    public void BubbleSort(){
-        for(int n = 0; n < array.length; n ++) {
-            for( m = 0; m < array.length; m ++){
+    public void BubbleSort() {
+        for (int r = 0; r < array.length - 1; r++) {
+
+            for (int m = 0; m < array.length - r - 1; m++) {
+                if (array[r] > array[r + 1]) {
+
+
+                }
 
             }
 
         }
 
-    }
+        public void instertSort() {
+            for (int j = 1; j < array.length; j++) {
 
-    // Main method
-    public static void main(String[] args) {
-        Sorting sorter = new Sorting(10);
+                        int key = array[k];
+                        int i = k-1;
+                        while ( (i > -1) && ( array [i] > key ) ) {
+                            array [i+1] = array [i];
+                            i--;
+                        }
+                        array[i+1] = key;
+                    }
+                }
 
-    }
-}
+                }
+            }
+
+
+                // Main method
+                public static void main (String[]args){
+                    Sorting sorter = new Sorting(10);
+
+                }
+
+
+
