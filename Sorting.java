@@ -1,11 +1,11 @@
 import java.util.Random;
 
-public class Sorting {
+public class Sorting2 {
 
     private int[] array; // Instance variable to hold the array
 
     // Constructor
-    public Sorting(int size) {
+    public Sorting2(int size) {
         array = new int[size]; // Initialize the array with the given size
         fillArrayWithRandomNumbers(); // Populate the array with random integers
 
@@ -13,7 +13,7 @@ public class Sorting {
         printArray();
 
         // Sort the array
-        BubbleSort();
+
 
         System.out.println("Sorted Array:");
         printArray();
@@ -38,57 +38,41 @@ public class Sorting {
     // Method to sort the array using slection sort
     public void SelectionSort() {
 
-        for (int n = 0; n < array.length - 1; n++) { //0 to 8
+        void insertionSort;(int Array[]  ) {
+            for (int f = 1; f < Array.length; f++) {
+                int k = Array[f];
+                int w = f - 1;
 
-            int minIndex = n;
+                while (w >= 0 && Array[w] > k) {
+                    Array[w + 1] = Array[w];
+                    w = w - 1;
 
-            for (int i = n; i < array.length; i++) {
-                if (array[i] < array[minIndex]) {
-                    minIndex = i;
+
                 }
-            }
 
-            int temp = array[n];
-            array[n] = array[minIndex];
-            array[minIndex] = temp;
-
+        }
         }
     }
 
+
     // bubble sort method
     public void BubbleSort() {
-        for (int r = 0; r < array.length - 1; r++) {
+        /*for (int r = 0; r < array.length - 1; r++) {
 
             for (int m = 0; m < array.length - r - 1; m++) {
                 if (array[r] > array[r + 1]) {
-
+*/
 
                 }
 
             }
 
-        }
 
-        public void instertSort() {
-            for (int j = 1; j < array.length; j++) {
-
-                        int key = array[k];
-                        int i = k-1;
-                        while ( (i > -1) && ( array [i] > key ) ) {
-                            array [i+1] = array [i];
-                            i--;
-                        }
-                        array[i+1] = key;
-                    }
-                }
-
-                }
-            }
 
 
                 // Main method
                 public static void main (String[]args){
-                    Sorting sorter = new Sorting(10);
+                    Sorting2 sorter = new Sorting2(10);
 
                 }
 
